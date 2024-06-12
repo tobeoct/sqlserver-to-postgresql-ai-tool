@@ -27,18 +27,19 @@ At present, the tool has successfully implemented the following feature:
 
 1. **Clone the repository**:
     ```sh
-    git clone https://github.com/your-username/sqlserver-to-postgresql-migration-tool.git
-    cd sqlserver-to-postgresql-migration-tool
+    git clone https://github.com/your-username/sqlserver-to-postgresql-ai-tool.git
+    cd sqlserver-to-postgresql-ai-tool
     ```
 
 2. **Install dependencies**:
     ```sh
-    pip install -r requirements.txt
+    pip install poetry
+    poetry install
     ```
 
 3. **Run the stored procedure migration tool**:
     ```sh
-    python migrate_stored_procedures.py --input path/to/sqlserver/procedures --output path/to/postgresql/procedures
+    poetry run start
     ```
 
 ## Roadmap
@@ -49,20 +50,6 @@ At present, the tool has successfully implemented the following feature:
 - [ ] **Add SQLServer Business Logic Migration Features**: Extend support for more complex business logic migration.
 - [ ] **Automate Infrastructure Deployment**: Streamline the deployment process for PostgreSQL environments.
 - [ ] **Implement High Availability Setup**: Provide automated HA configurations for PostgreSQL.
-
-## Contributing
-
-Contributions are welcome! Please read our [contributing guidelines](CONTRIBUTING.md) to get started.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Acknowledgements
-
-Special thanks to the developers and contributors who have dedicated their time and effort to make this project possible. 
-
-For more information, questions, or support, please feel free to open an issue or contact the maintainers.
 
 ---
 
