@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "sqlserver-to-postgresql"
+version = "0.1.0"
+description = ""
+authors = ["Tobechukwu Onyema <tobe.onyema@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pyodbc = "^5.1.0"
+openai = "^1.33.0"
+pyad = "^0.6.0"
+pywin32 = "^306"
+selenium = "^4.21.0"
+msal = "^1.28.0"
+psycopg2 = "^2.9.9"
+psycopg2-binary = "^2.9.9"
+python-dotenv = "^1.0.1"
+
+[tool.poetry.scripts]
+start = "sqlserver_to_postgresql.main:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
