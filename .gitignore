@@ -1,0 +1,5 @@
+skipped_procedures/*
+converted_procedures_*/*
+**/*/__pycache__
+.env
+*__ignore.py
